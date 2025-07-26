@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Responsiva</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .grid-gallery figure {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        .grid-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .grid-gallery figcaption {
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 800px) {
+            .grid-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .grid-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galeria de Paisagens</h1>
+
+    <div class="flex-container">
+        <div class="grid-gallery">
+            <figure>
+                <img src="https://placehold.co/600x400/007BFF/FFFFFF?text=Montanha" alt="Vista de uma montanha">
+                <figcaption>Montanha ao Amanhecer</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/28A745/FFFFFF?text=Floresta" alt="Vista de uma floresta densa">
+                <figcaption>Trilha na Floresta</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/DC3545/FFFFFF?text=Deserto" alt="Dunas de um deserto">
+                <figcaption>Dunas do Deserto</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/FFC107/333333?text=Praia" alt="Praia com coqueiros">
+                <figcaption>Praia Tropical</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/17A2B8/FFFFFF?text=Lago" alt="Lago calmo cercado por árvores">
+                <figcaption>Lago Sereno</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/6F42C1/FFFFFF?text=Cachoeira" alt="Cachoeira caindo sobre rochas">
+                <figcaption>Cachoeira Escondida</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/FD7E14/FFFFFF?text=Campo" alt="Campo de flores silvestres">
+                <figcaption>Campo Florido</figcaption>
+            </figure>
+            <figure>
+                <img src="https://placehold.co/600x400/6C757D/FFFFFF?text=Neve" alt="Paisagem coberta de neve">
+                <figcaption>Vale Nevado</figcaption>
+            </figure>
+        </div>
+    </div>
+
+</body>
+</html>

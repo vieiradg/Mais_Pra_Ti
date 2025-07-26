@@ -1,7 +1,5 @@
 # Desafio de JavaScript Avançado
 
-## Descrição
-
 Este desafio contém um conjunto de exercícios em JavaScript que abordam conceitos importantes, como:
 
 - Estruturas de controle avançadas
