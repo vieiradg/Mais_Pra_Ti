@@ -1,12 +1,63 @@
-# React + Vite
+# VieiraFilmes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo simples feito em React para pesquisar filmes, ver detalhes e salvar uma lista de favoritos, utilizando a API do The Movie Database (TMDB).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Principais Funcionalidades
 
-## Expanding the ESLint configuration
+-   Busca de filmes por nome.
+-   Visualização de detalhes (sinopse, elenco, avaliação).
+-   Sistema para adicionar e remover filmes de uma lista de favoritos.
+-   Paginação para navegar pelos resultados da busca.
+-   Os favoritos ficam salvos no navegador (`localStorage`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologias
+
+-   React
+-   Vite
+-   React Router DOM
+-   Axios
+-   CSS
+
+---
+
+## Como Executar o Projeto
+
+1.  **Clone o repositório principal:**
+    ```bash
+    git clone [https://github.com/vieiradg/Mais_Pra_Ti.git](https://github.com/vieiradg/Mais_Pra_Ti.git)
+    ```
+
+2.  **Navegue até a pasta deste projeto específico:**
+    ```bash
+    cd Mais_Pra_Ti/my-movie-app
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Crie o arquivo de ambiente (`.env`):**
+    -   Dentro da pasta `my-movie-app`, crie um arquivo chamado `.env`.
+    -   Adicione sua chave da API do TMDB, assim:
+        ```
+        VITE_TMDB_API_KEY=SUA_CHAVE_AQUI
+        ```
+
+5.  **Rode o projeto:**
+    ```bash
+    npm run dev
+    ```
+    Acesse `http://localhost:5173` no seu navegador.
+
+---
+
+## Autor
+
+Feito por **Diego Vieira**.
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vieiradg)
