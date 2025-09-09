@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #01b4e4;
+  background-color: transparent;
+  color: #01b4e4;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pagination button.active {
+  background-color: #01b4e4;
+  color: #0d253f;
+}

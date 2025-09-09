@@ -1,0 +1,1 @@
+export const ErrorMessage = ({ message }) => <div className="status-message error">Erro: {message}</div>;
